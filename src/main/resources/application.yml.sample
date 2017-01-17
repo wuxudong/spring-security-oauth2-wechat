@@ -1,0 +1,16 @@
+wechat:
+  client:
+    clientId: [your app id]
+    clientSecret: [you app secret]
+    accessTokenUri: https://api.weixin.qq.com/sns/oauth2/access_token
+    userAuthorizationUri: https://open.weixin.qq.com/connect/oauth2/authorize
+    tokenName: access_token
+    authenticationScheme: query
+    clientAuthenticationScheme: form
+    scope: snsapi_userinfo
+  resource:
+    userInfoUri: https://api.weixin.qq.com/sns/userinfo
+
+logging:
+  level:
+    org.springframework.security: DEBUG
